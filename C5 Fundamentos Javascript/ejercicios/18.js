@@ -7,7 +7,15 @@ function esVocal(letra) {
   // "u" ---> "Es vocal"
   // "n" ---> "Dato incorrecto"
   // "texto largo" ---> "Dato incorrecto"
-  // Tu código:
+  // Tu código: 
+  if (letra.length === 1) {
+    if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u" ) {
+    return 'Es vocal';
+    } else if (letra !== "a" || letra !== "e" || letra !== "i" || letra !== "o" || letra !== "u" ) {
+      return 'Dato incorrecto';
+    } else {
+      return 'Dato incorrecto';
+    }
+  }
 }
-
 module.exports = esVocal;
